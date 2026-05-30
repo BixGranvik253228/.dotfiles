@@ -1,0 +1,9 @@
+[flavor]
+dark = "modus-vivendi"
+light = "bluloco-light"
+
+[icon]
+dirs = []
+files = []
+exts = []
+
