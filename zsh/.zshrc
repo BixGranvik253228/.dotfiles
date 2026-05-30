@@ -1,3 +1,4 @@
+clear # to remove "last time login..." line
 
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
@@ -41,3 +42,10 @@ function yz() {
 	command rm -f -- "$tmp"
 }
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# prompt customizing
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%b '
+setopt PROMPT_SUBST
+PROMPT='%F{green}%n%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%% '
