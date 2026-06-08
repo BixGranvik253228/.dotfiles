@@ -2,7 +2,7 @@ to remember stuff like configs, aliases, reasonings and my own guidelines. readm
 
 aliases
 	yz and zd because i like two-letter commands like ls and cd and they match the names and cd≈zd
-
+	TODO : alias ex=exit ... but there's a conflict with "Ex mode" so have to unbind that first
 git flow 
 	"since there are many ways to do it here is how i like it."
 

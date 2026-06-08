@@ -53,3 +53,6 @@ PROMPT='%F{green}%n%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f'$'\n''> '
 # aliases
 alias cl=clear
 alias vsc=code
+alias mkfil=touch
+alias ex='exit'
+alias -g COPY='| pbcopy'
